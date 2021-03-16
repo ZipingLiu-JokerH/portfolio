@@ -3735,7 +3735,7 @@ body.is-preload #banner p {
 
 .wrapper {
   background-color: rgba(46, 49, 65, 0.6);
-  margin: 6.5em 0;
+  margin: 6em 0;
   position: relative;
 }
 
@@ -3758,14 +3758,14 @@ body.is-preload #banner p {
   background-size: 100% 100%;
   content: "";
   display: block;
-  height: 6.5em;
+  height: 6em;
   position: absolute;
   width: 100%;
 }
 
 .wrapper:before {
   left: 0;
-  top: -6.5em;
+  top: -6em;
 }
 
 .wrapper:after {
@@ -3773,7 +3773,7 @@ body.is-preload #banner p {
   -webkit-transform: scaleY(-1);
   -ms-transform: scaleY(-1);
   transform: scaleY(-1);
-  bottom: -6.5em;
+  bottom: -6em;
   left: 0;
 }
 
