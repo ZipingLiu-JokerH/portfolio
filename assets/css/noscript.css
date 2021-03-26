@@ -6,7 +6,7 @@
 
 /* Banner */
 
-/* body.is-preload #banner .logo {
+/* body.is-preload #intro .logo {
 		-moz-transform: none;
 		-webkit-transform: none;
 		-ms-transform: none;
@@ -14,7 +14,7 @@
 		opacity: 1;
 	} */
 
-body.is-preload #banner h2 {
+body.is-preload #intro h2 {
   opacity: 1;
   -moz-transform: none;
   -webkit-transform: none;
@@ -26,7 +26,7 @@ body.is-preload #banner h2 {
   filter: none;
 }
 
-body.is-preload #banner p {
+body.is-preload #intro p {
   opacity: 01;
   -moz-transform: none;
   -webkit-transform: none;
