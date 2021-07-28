@@ -2770,8 +2770,6 @@ ul.icons li .icon:before {
 ul.contact {
   list-style: none;
   padding: 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
 }
 
 ul.contact li {
@@ -3500,11 +3498,16 @@ body.is-menu-visible #menu .inner {
 
 #intro {
   padding: 10em 0 4.75em 0;
+  height: 90vh;
 }
 
 #intro .inner {
   margin: 0 auto;
   width: 55em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* #intro .logo {
@@ -3602,7 +3605,7 @@ body.is-menu-visible #menu .inner {
   }
 
   #intro .inner {
-    width: 100%;
+    width: 90%;
   }
 }
 
@@ -3685,7 +3688,6 @@ body.is-preload #intro p {
   font-weight: 200;
   letter-spacing: 0.1em;
   line-height: 2;
-  text-transform: uppercase;
 }
 
 @media screen and (max-width: 1280px) {
@@ -3915,7 +3917,6 @@ body.is-preload #intro p {
 }
 
 .wrapper.spotlight .image {
-  border-radius: 100%;
   margin: 0 3em 2em 0;
   width: 22em;
   overflow: hidden;
@@ -3923,7 +3924,6 @@ body.is-preload #intro p {
 }
 
 .wrapper.spotlight .image img {
-  border-radius: 100%;
   width: 100%;
 }
 
@@ -4153,7 +4153,7 @@ body.is-preload #intro p {
 }
 
 #footer .inner .contact {
-  width: 100%;
+  width: calc(50% - 1.5em);
 }
 
 #footer .inner .copyright {
@@ -4255,4 +4255,44 @@ body.is-preload #intro p {
   #footer .inner {
     padding: 2em 1.5em 0.1em 1.5em;
   }
+}
+
+/* fontend skills */
+
+.frontend-skills a {
+  border-bottom: none;
+}
+
+.frontend-skills img {
+  width: 100%;
+}
+
+#frontend-sass {
+  position: relative;
+  top: 10%;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  background-color: rgba(57, 58, 81, 0.6);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 1em;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 10%;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }

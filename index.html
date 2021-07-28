@@ -21,7 +21,8 @@
     <!-- Page Wrapper -->
     <div id="page-wrapper">
       <!-- Header -->
-      <header id="header" class="alt">
+      <header id="header">
+        <!-- Here I can make myself a logo and put it here -->
         <!-- <h1><a href="index.html">Solid State</a></h1> -->
         <nav>
           <a href="#menu">Menu</a>
@@ -33,10 +34,24 @@
         <div class="inner">
           <h2>Menu</h2>
           <ul class="links">
-            <li><a href="#intro">Intro</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact-me">Contact</a></li>
-            <li><a href="elements.html">Elements</a></li>
+            <!-- anchor scrolling -->
+            <li>
+              <a href="#intro" onclick="scrollToId('intro'); return false;"
+                >Intro</a
+              >
+            </li>
+            <li>
+              <a
+                href="#projects"
+                onclick="scrollToId('projects'); return false;"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a href="#footer" onclick="scrollToId('footer'); return false;"
+                >Contact</a
+              >
+            </li>
           </ul>
           <a href="#" class="close">Close</a>
         </div>
@@ -45,13 +60,10 @@
       <!-- Banner -- intro-->
       <section id="intro">
         <div class="inner">
-          <!-- <div class="logo"><span class="icon fa-gem"></span></div> -->
-          <h2>Hello! My name is Ziping Liu</h2>
+          <h2>Hello! I am Ziping Liu</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
-            vero quasi, quis blanditiis unde inventore eius atque, nihil amet
-            assumenda repudiandae quae incidunt, eos reiciendis. Fugiat minima
-            ratione dolor officiis?
+            I'm a <strong>self-motivated</strong> web-developer with a desire to
+            take new challenges
           </p>
         </div>
       </section>
@@ -61,18 +73,126 @@
         <!-- One -->
         <section id="one" class="wrapper spotlight style1">
           <div class="inner">
-            <!-- <a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a> -->
             <img
-              src="images/fronted.jpg"
+              src="images/webDev.jpg"
               alt="Frontend tech stack"
               class="image"
             />
             <div class="content">
               <h2 class="major">Web development</h2>
-              <p>
-                ` Experience with morden web technologies such as React, Redux,
-                javascript - ES6. Node.js, express.
-              </p>
+              <div class="row gtr-uniform frontend-skills">
+                <a
+                  href="https://html.spec.whatwg.org/"
+                  target="_blank"
+                  class="col-2 tooltip"
+                >
+                  <img
+                    src="./images/fontendSkills/html.svg"
+                    alt="html logo"
+                  /><span class="tooltiptext">HTML</span>
+                </a>
+                <a
+                  href="https://www.w3.org/Style/CSS/Overview.en.html"
+                  target="_blank"
+                  class="col-2 tooltip"
+                >
+                  <img
+                    src="./images/fontendSkills/css.svg"
+                    alt="css logo"
+                  /><span class="tooltiptext">CSS</span></a
+                >
+                <a
+                  href="https://en.wikipedia.org/wiki/JavaScript"
+                  target="_blank"
+                  class="col-2 tooltip"
+                >
+                  <img
+                    src="./images/fontendSkills/javascript.svg"
+                    alt="javascript logo"
+                  /><span class="tooltiptext">JavaScript</span></a
+                >
+                <a
+                  href="https://reactjs.org/"
+                  target="_blank"
+                  class="col-2 tooltip"
+                >
+                  <img
+                    src="./images/fontendSkills/react.svg"
+                    alt="react logo"
+                  /><span class="tooltiptext">React</span></a
+                >
+                <a
+                  href="https://redux.js.org/"
+                  target="_blank"
+                  class="col-2 tooltip"
+                >
+                  <img
+                    src="./images/fontendSkills/redux.svg"
+                    alt="redux logo"
+                  /><span class="tooltiptext">Redux</span></a
+                >
+                <a
+                  href="https://www.gatsbyjs.com/"
+                  target="_blank"
+                  class="col-2 tooltip"
+                >
+                  <img
+                    src="./images/fontendSkills/gatsby.svg"
+                    alt="gatsby logo"
+                  /><span class="tooltiptext">Gatsby</span></a
+                >
+                <a
+                  href="https://github.com/"
+                  target="_blank"
+                  class="col-2 tooltip"
+                >
+                  <img
+                    src="./images/fontendSkills/github.svg"
+                    alt="github logo"
+                  /><span class="tooltiptext">Github</span></a
+                >
+                <a
+                  href="https://nodejs.org/en/"
+                  target="_blank"
+                  class="col-2 tooltip"
+                >
+                  <img
+                    src="./images/fontendSkills/nodejs.svg"
+                    alt="node.js logo"
+                  /><span class="tooltiptext">Node.js</span></a
+                >
+                <a
+                  href="https://sass-lang.com/"
+                  target="_blank"
+                  class="col-2 tooltip"
+                >
+                  <img
+                    src="./images/fontendSkills/sass.svg"
+                    alt="sass logo"
+                    id="frontend-sass"
+                  /><span class="tooltiptext">Sass</span></a
+                >
+                <a
+                  href="https://www.typescriptlang.org/"
+                  target="_blank"
+                  class="col-2 tooltip"
+                >
+                  <img
+                    src="./images/fontendSkills/typescript.svg"
+                    alt="typescript logo"
+                  /><span class="tooltiptext">TypeScript</span></a
+                >
+                <a
+                  href="https://getbootstrap.com/"
+                  target="_blank"
+                  class="col-2 tooltip"
+                >
+                  <img
+                    src="./images/fontendSkills/bootstrap.svg"
+                    alt="bootstrap logo"
+                  /><span class="tooltiptext">Bootstrap</span></a
+                >
+              </div>
             </div>
           </div>
         </section>
@@ -80,7 +200,6 @@
         <!-- Two -->
         <section id="two" class="wrapper alt spotlight style2">
           <div class="inner">
-            <!-- <a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a> -->
             <img
               src="images/waterloo.JPG"
               alt="University of Waterloo Picture"
@@ -96,95 +215,113 @@
                 Systems, Database Management, Artificial Intelligence, Machine
                 Learning etc.
               </p>
-              <!-- <a href="#" class="special">Learn more</a> -->
             </div>
           </div>
         </section>
 
         <!-- Three -->
-        <!-- <section id="three" class="wrapper spotlight style3">
-          <div class="inner">
-            <a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
-            <div class="content">
-              <h2 class="major">Nullam dignissim</h2>
-              <p>
-                Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras
-                turpis ante, nullam sit amet turpis non, sollicitudin posuere
-                urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim
-                dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla
-                cursus.
-              </p>
-              <a href="#" class="special">Learn more</a>
-            </div>
-          </div>
-        </section> -->
-
-        <!-- Three -->
         <section id="projects" class="wrapper style1">
           <div class="inner">
-            <h2 class="major">Projects</h2>
-            <p>
-              Cras mattis ante fermentum, malesuada neque vitae, eleifend erat.
-              Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis
-              egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus
-              in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.
-            </p>
+            <h2 class="major">Projects</h2> 
             <section class="features">
-              <article>
-                <!-- <a href="#" class="image"
-                  ><img src="images/pic04.jpg" alt=""
-                /></a> -->
-                <img src="images/pic04.jpg" alt="" class="image" />
-                <h3 class="major">Sed feugiat lorem</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id
-                  nulla dignissim dapibus ultrices.
-                </p>
-                <a href="#" class="special">See demmo</a>
-                <a href="#" class="special">See code</a>
+              <article>   
+                <img
+                  src="images/highlightProjects/burgerBuilder_lg.png"
+                  alt="burger builder website"
+                  class="image"
+                />
+                <h3 class="major">Burger Builder</h3>
+                <ul>
+                  <li>Redux</li>
+                  <li>React Router</li>
+                  <li>Firebase</li>
+                </ul>
+                <a
+                  href="https://react-burgerbuilder-77cc6.web.app/"
+                  class="special"
+                  target="_blank"
+                  >Go Live</a
+                >
+                <a
+                  href="https://github.com/ZipingLiu-JokerH/Udemy-React/tree/master/burger-builder"
+                  class="special"
+                  target="_blank"
+                  >See Code</a
+                >
               </article>
               <article>
-                <!-- <a href="#" class="image"
-                  ><img src="images/pic05.jpg" alt=""
-                /></a> -->
-                <img src="images/pic05.jpg" alt="" class="image" />
-                <h3 class="major">Nisl placerat</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id
-                  nulla dignissim dapibus ultrices.
-                </p>
-                <a href="#" class="special">Visit site</a>
-                <a href="#" class="special">See code</a>
+                <img
+                  src="images/highlightProjects/catAdoption_lg.png"
+                  alt=""
+                  class="image"
+                />
+                <h3 class="major">Cat Adoption Site</h3>
+                <ul>
+                  <li>Formik</li>
+                  <li>React Router</li>
+                  <li>Figma</li>
+                </ul>
+                <a
+                  href="https://catadoptionredesign.web.app/"
+                  class="special"
+                  target="_blank"
+                  >Go Live</a
+                >
+                <a
+                  href="https://github.com/ZipingLiu-JokerH/cat_adoption_website"
+                  class="special"
+                  target="_blank"
+                  >See Code</a
+                >
               </article>
               <article>
-                <!-- <a href="#" class="image"
-                  ><img src="images/pic06.jpg" alt=""
-                /></a> -->
-                <img src="images/pic06.jpg" alt="" class="image" />
-                <h3 class="major">Ante fermentum</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id
-                  nulla dignissim dapibus ultrices.
-                </p>
-                <a href="#" class="special">Visit site</a>
-                <a href="#" class="special">See code</a>
+                <img
+                  src="images/highlightProjects/taskManagerApi_lg.png"
+                  alt=""
+                  class="image"
+                />
+                <h3 class="major">Task Manager API</h3>
+                <ul>
+                  <li>Express</li>
+                  <li>Mongoose</li>
+                </ul>
+                <a
+                  href="https://github.com/ZipingLiu-JokerH/node_task_manager-api
+              "
+                  class="special"
+                  target="_blank"
+                  >See code</a
+                >
               </article>
               <article>
-                <!-- <a href="#" class="image"
-                  ><img src="images/pic07.jpg" alt=""
-                /></a> -->
-                <img src="images/pic07.jpg" alt="" class="image" />
-                <h3 class="major">Fusce consequat</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id
-                  nulla dignissim dapibus ultrices.
-                </p>
-                <a href="#" class="special">See demmo</a>
-                <a href="#" class="special">See code</a>
+                <img
+                  src="images/highlightProjects/omnifood_lg.png"
+                  alt=""
+                  class="image"
+                />
+                <h3 class="major">Static Website</h3>
+                <ul>
+                  <li>HTML & CSS</li>
+                  <li>Fully Responsive</li>
+                </ul>
+                <a
+                  href="https://zipingliu-jokerh.github.io/"
+                  class="special"
+                  target="_blank"
+                  >Go Live</a
+                >
+                <a
+                  href="https://github.com/ZipingLiu-JokerH/ZipingLiu-JokerH.github.io"
+                  class="special"
+                  target="_blank"
+                  >See Code</a
+                >
               </article>
             </section>
             <ul class="actions">
-              <li><a href="projects.html" class="button">Browse All</a></li>
+              <li>
+                <a href="projects.html" class="button primary">Browse All</a>
+              </li>
             </ul>
           </div>
         </section>
@@ -195,12 +332,9 @@
         <div class="inner">
           <h2 class="major">Get in touch</h2>
           <p>
-            Cras mattis ante fermentum, malesuada neque vitae, eleifend erat.
-            Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis
-            egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus
-            in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.
+            Feel free to contact me. We can talk about potential job opportunities or just say hi &nbsp &#127881
           </p>
-          <!-- <form method="post" action="#">
+          <form method="post" action="https://formspree.io/f/xwkanagr">
             <div class="fields">
               <div class="field">
                 <label for="name">Name</label>
@@ -216,17 +350,25 @@
               </div>
             </div>
             <ul class="actions">
-              <li><input type="submit" value="Send Message" /></li>
+              <li>
+                <input type="submit" class="primary" value="Send Message" />
+              </li>
             </ul>
-          </form> -->
-          <ul class="contact" id="contact-me">
+          </form>
+          <ul class="contact">
+            <li class="icon solid fa-envelope">
+              <a href="mailto:herrickinjilincity@gmail.com">My email</a>
+            </li>
+            <li class="icon brands fa-github">
+              <a href="https://github.com/ZipingLiu-JokerH">Github profile</a>
+            </li>
             <li class="icon brands fa-linkedin">
               <a href="https://www.linkedin.com/in/ziping-liu-308107175/"
                 >Linkedin profile</a
               >
             </li>
-            <li class="icon brands fa-github">
-              <a href="https://github.com/ZipingLiu-JokerH">Github profile</a>
+            <li class="icon fsr fa-user">
+              <a href="./resume.pdf" target="_blank">My Resume</a>
             </li>
           </ul>
           <ul class="copyright">
@@ -246,5 +388,32 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    <!-- script for anchor scrolling effect -->
+    <script>
+      function scroll(to, duration) {
+        if (document.documentElement.scrollTop == to) return;
+        var diff = to - document.documentElement.scrollTop;
+        var scrollStep = Math.PI / (duration / 10);
+        var count = 0,
+          currPos;
+        start = window.pageYOffset;
+
+        scrollInterval = setInterval(function () {
+          if (document.documentElement.scrollTop != to) {
+            console.log(document.documentElement.scrollTop, to);
+            count = count + 1;
+            currPos = start + diff * (0.5 - 0.5 * Math.cos(count * scrollStep));
+            document.documentElement.scrollTop = currPos;
+          } else {
+            clearInterval(scrollInterval);
+          }
+        }, 10);
+      }
+
+      function scrollToId(elID) {
+        var dest = document.getElementById(elID);
+        scroll(dest.offsetTop, 500);
+      }
+    </script>
   </body>
 </html>
