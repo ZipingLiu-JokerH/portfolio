@@ -4267,6 +4267,10 @@ body.is-preload #intro p {
   width: 100%;
 }
 
+.frontend-skills {
+  padding-bottom: 1rem;
+}
+
 #frontend-sass {
   position: relative;
   top: 10%;
