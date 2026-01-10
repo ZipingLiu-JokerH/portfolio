@@ -4300,3 +4300,23 @@ body.is-preload #intro p {
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
+
+/* experience and education section */
+.experience-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.experience-title .role,
+.experience-title .meta-data {
+  font: inherit;
+  color: inherit;
+}
+
+.experience-title .meta-data {
+  font-size: 0.9em;
+  opacity: 0.8;
+  white-space: nowrap;
+}
